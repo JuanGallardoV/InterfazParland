@@ -34,5 +34,10 @@ namespace InterfazParland
         {
             App.ParentWindowRef.ParentFrame.Navigate(new TresEnRayaMultijugador());
         }
+
+        private void btnUnJugador_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

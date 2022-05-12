@@ -116,8 +116,8 @@
         </Style>
     </Page.Resources>
     <Grid>
-        <Button Style="{DynamicResource btnRounded}" x:Name="btCrear" Foreground="White" Content="Crear una Partida" HorizontalAlignment="Left" Margin="350,250,0,0" VerticalAlignment="Top" Height="60" Width="350" Background="#99C4C4C4" FontFamily="Segoe UI Semibold" FontSize="20"/>
-        <Button Style="{DynamicResource btnRounded}" x:Name="btnUnirse" Foreground="White" Content="Unirse a una Partida" HorizontalAlignment="Left" Margin="350,346,0,0" VerticalAlignment="Top" Height="60" Width="350" Background="#99C4C4C4" FontFamily="Segoe UI Semibold" FontSize="20"/>
+        <Button Style="{DynamicResource btnRounded}" x:Name="btCrear" Foreground="White" Content="Crear una Partida" HorizontalAlignment="Left" Margin="350,250,0,0" VerticalAlignment="Top" Height="60" Width="350" Background="#99C4C4C4" FontFamily="Segoe UI Semibold" FontSize="20" Click="btCrear_Click"/>
+        <Button Style="{DynamicResource btnRounded}" x:Name="btnUnirse" Foreground="White" Content="Unirse a una Partida" HorizontalAlignment="Left" Margin="350,346,0,0" VerticalAlignment="Top" Height="60" Width="350" Background="#99C4C4C4" FontFamily="Segoe UI Semibold" FontSize="20" Click="btnUnirse_Click"/>
         <Button Style="{DynamicResource Salir}" x:Name="btnSalir" HorizontalAlignment="Left" Margin="15,674,0,0" VerticalAlignment="Top" Click="btnSalir_Click" Width="47" Height="47" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Salir.png"/>

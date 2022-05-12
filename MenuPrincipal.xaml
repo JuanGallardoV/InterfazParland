@@ -8,6 +8,7 @@
       d:DesignHeight="768" d:DesignWidth="1024"
       Title="MenuPrincipal" Height="768" Width="1024">
     <Page.Resources>
+        <!--<DropShadowEffect x:Key="Hover" ShadowDepth="0" Color="Blue" Opacity="1" BlurRadius="20"/>-->
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
                 <Setter.Value>
@@ -19,6 +20,10 @@
         </Style>
         <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
         <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
         <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
         <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
         <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
@@ -43,6 +48,7 @@
                             </Trigger>
                             <Trigger Property="IsMouseOver" Value="true">
                                 <Setter Property="Opacity" TargetName="border" Value="0.6"/>
+                                <!--<Setter Property="Button.Effect" Value="{StaticResource Hover}" />-->
                             </Trigger>
                             <Trigger Property="IsPressed" Value="true">
                                 <Setter Property="Opacity" TargetName="border" Value="0.6"/>
@@ -60,35 +66,35 @@
     </Page.Resources>
 
     <Grid>
-        <Button Style="{DynamicResource btnRounded}" x:Name="btnTresEnRaya" HorizontalAlignment="Left" Margin="149,216,0,0" VerticalAlignment="Top" Width="140" Height="140" Click="btnTresEnRaya_Click" BorderBrush="{x:Null}">
+        <Button Style="{DynamicResource btnRounded}" x:Name="btnTresEnRaya" HorizontalAlignment="Left" Margin="149,192,0,0" VerticalAlignment="Top" Width="140" Height="140" Click="btnTresEnRaya_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Logo Tres en Raya.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="lblTresEnRaya" Content="Tres en Raya" HorizontalAlignment="Left" Height="37" Margin="149,356,0,0" VerticalAlignment="Top" Width="140" Background="#00000000" FontFamily="Segoe UI Variable Text Semibold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,0,0" Foreground="White"/>
-        <Button Style="{DynamicResource btnRounded}" x:Name="btnBuscaminas" HorizontalAlignment="Left" Height="140" Margin="442,216,0,0" VerticalAlignment="Top" Width="140" BorderBrush="{x:Null}">
+        <Label x:Name="lblTresEnRaya" Content="Tres en Raya" HorizontalAlignment="Left" Height="37" Margin="149,332,0,0" VerticalAlignment="Top" Width="140" Background="#00000000" FontFamily="Segoe UI Variable Text Semibold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,0,0" Foreground="White"/>
+        <Button Style="{DynamicResource btnRounded}" x:Name="btnBuscaminas" HorizontalAlignment="Center" Height="140" Margin="0,192,0,0" VerticalAlignment="Top" Width="140" BorderBrush="{x:Null}" Click="btnBuscaminas_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Logo Buscaminas.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="lblBuscaminas" Content="Buscaminas" HorizontalAlignment="Left" Height="36" Margin="442,356,0,0" VerticalAlignment="Top" Width="140" Background="#00000000" FontFamily="Segoe UI Variable Text Semibold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,0,0" Foreground="White"/>
-        <Button Style="{DynamicResource btnRounded}" x:Name="btnBlackjack" Content="" HorizontalAlignment="Left" Height="140" Margin="735,216,0,0" VerticalAlignment="Top" Width="140" BorderBrush="{x:Null}">
+        <Label x:Name="lblBuscaminas" Content="Buscaminas" HorizontalAlignment="Center" Height="36" Margin="0,332,0,0" VerticalAlignment="Top" Width="140" Background="#00000000" FontFamily="Segoe UI Variable Text Semibold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,0,0" Foreground="White"/>
+        <Button Style="{DynamicResource btnRounded}" x:Name="btnBlackjack" HorizontalAlignment="Left" Height="140" Margin="735,192,0,0" VerticalAlignment="Top" Width="140" BorderBrush="{x:Null}" Click="btnBlackjack_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Logo BlackJack.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="lblBlackjack" Content="Blackjack" HorizontalAlignment="Left" Height="36" Margin="735,356,0,0" VerticalAlignment="Top" Width="140" Background="#00000000" FontFamily="Segoe UI Variable Text Semibold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,0,0" Foreground="White"/>
-        <Button Style="{DynamicResource btnRounded}" x:Name="btnDamas" Content="" HorizontalAlignment="Left" Margin="289,407,0,0" VerticalAlignment="Top" Width="140" Height="140" BorderBrush="{x:Null}">
+        <Label x:Name="lblBlackjack" Content="Blackjack" HorizontalAlignment="Left" Height="36" Margin="735,332,0,0" VerticalAlignment="Top" Width="140" Background="#00000000" FontFamily="Segoe UI Variable Text Semibold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,0,0" Foreground="White"/>
+        <Button Style="{DynamicResource btnRounded}" x:Name="btnDamas" Content="" HorizontalAlignment="Left" Margin="289,383,0,0" VerticalAlignment="Top" Width="140" Height="140" BorderBrush="{x:Null}" Click="btnDamas_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Logo Damas.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="lblDamas" Content="Damas" HorizontalAlignment="Left" Height="36" Margin="289,555,0,0" VerticalAlignment="Top" Width="140" Background="#00000000" FontFamily="Segoe UI Variable Text Semibold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,0,0" Foreground="White"/>
-        <Button Style="{DynamicResource btnRounded}" x:Name="btnSolitario" Content="" HorizontalAlignment="Left" Margin="595,407,0,0" VerticalAlignment="Top" Width="140" Height="140" BorderBrush="{x:Null}">
+        <Label x:Name="lblDamas" Content="Damas" HorizontalAlignment="Left" Height="36" Margin="289,531,0,0" VerticalAlignment="Top" Width="140" Background="#00000000" FontFamily="Segoe UI Variable Text Semibold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,0,0" Foreground="White"/>
+        <Button Style="{DynamicResource btnRounded}" x:Name="btnSolitario" Content="" HorizontalAlignment="Left" Margin="595,383,0,0" VerticalAlignment="Top" Width="140" Height="140" BorderBrush="{x:Null}" Click="btnSolitario_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Logo Solitario.png"/>
             </Button.Background>
         </Button>
-        <Label x:Name="lblSolitario" Content="Solitario" HorizontalAlignment="Left" Height="36" Margin="595,555,0,0" VerticalAlignment="Top" Width="140" Background="#00000000" FontFamily="Segoe UI Variable Text Semibold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,0,0" Foreground="White"/>
+        <Label x:Name="lblSolitario" Content="Solitario" HorizontalAlignment="Left" Height="36" Margin="595,531,0,0" VerticalAlignment="Top" Width="140" Background="#00000000" FontFamily="Segoe UI Variable Text Semibold" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Disabled" Padding="0,0,0,0" Foreground="White"/>
     </Grid>
 </Page>

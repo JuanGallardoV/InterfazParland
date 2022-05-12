@@ -29,5 +29,15 @@ namespace InterfazParland
         {
             App.ParentWindowRef.ParentFrame.Navigate(new JugarTresEnRaya());
         }
+
+        private void btCrear_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnUnirse_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
