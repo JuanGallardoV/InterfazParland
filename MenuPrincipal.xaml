@@ -49,6 +49,13 @@
                             <Trigger Property="IsMouseOver" Value="true">
                                 <Setter Property="Opacity" TargetName="border" Value="0.6"/>
                                 <!--<Setter Property="Button.Effect" Value="{StaticResource Hover}" />-->
+                                <!--<Setter Property="ContentTemplate">
+                                    <Setter.Value>
+                                        <DataTemplate>
+                                            <Image Source="Hover.png"></Image>
+                                        </DataTemplate>
+                                    </Setter.Value>
+                                </Setter>-->
                             </Trigger>
                             <Trigger Property="IsPressed" Value="true">
                                 <Setter Property="Opacity" TargetName="border" Value="0.6"/>
