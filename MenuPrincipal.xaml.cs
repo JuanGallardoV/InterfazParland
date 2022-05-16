@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,17 +39,20 @@ namespace InterfazParland
 
         private void btnBuscaminas_Click(object sender, RoutedEventArgs e)
         {
-
+            System.Diagnostics.Process.Start("Buscaminas.jar");
+            Application.Current.Windows[0].WindowState = WindowState.Minimized;
         }
 
         private void btnBlackjack_Click(object sender, RoutedEventArgs e)
         {
-
+            System.Diagnostics.Process.Start("Blackjack.jar");
+            Application.Current.Windows[0].WindowState = WindowState.Minimized;
         }
 
         private void btnSolitario_Click(object sender, RoutedEventArgs e)
         {
-
+            System.Diagnostics.Process.Start("Solitario.jar");
+            Application.Current.Windows[0].WindowState = WindowState.Minimized;
         }
     }
 }

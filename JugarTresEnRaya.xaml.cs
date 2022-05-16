@@ -37,7 +37,8 @@ namespace InterfazParland
 
         private void btnUnJugador_Click(object sender, RoutedEventArgs e)
         {
-
+            System.Diagnostics.Process.Start("TresEnRayaLocal.jar");
+            Application.Current.Windows[0].WindowState = WindowState.Minimized;
         }
     }
 }

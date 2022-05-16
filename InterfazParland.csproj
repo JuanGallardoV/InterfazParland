@@ -136,5 +136,14 @@
   <ItemGroup>
     <Resource Include="Logo Solitario.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="6d61271f56792b3cc2fb246ea0f302f4-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PngItem_1523454.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

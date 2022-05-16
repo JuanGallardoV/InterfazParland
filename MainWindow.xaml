@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InterfazParland"
         mc:Ignorable="d"
-        Title="Parland" Height="768" Width="1024" Loaded="Window_Loaded" VerticalAlignment="Center" HorizontalAlignment="Center" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+        Title="Parland" Height="768" Width="1024" Loaded="Window_Loaded" VerticalAlignment="Center" HorizontalAlignment="Center" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="/Icon.png">
     <Window.Background>
         <ImageBrush ImageSource="/Fondo.png"/>
     </Window.Background>
